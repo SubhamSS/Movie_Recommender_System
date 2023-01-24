@@ -9,9 +9,9 @@
 > https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
 
 #### Run on your own
-
+Go to terminal and type the following:
 ```shell
-$ streamlit run app.py
+streamlit run app.py
 ```
 
 ---
