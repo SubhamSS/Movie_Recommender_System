@@ -14,45 +14,9 @@ Go to terminal and type the following:
 streamlit run app.py
 ```
 
----
-## Features 📋
-* User can register and login.
-* User can search through various movies and look through its details.
-* User can give rating to the movies.
-* User can add movie to their watch list.
-* User can get movie recommendation (Recommendation algorithm (Collaborative Filtering) which suggests new movies based on the ratings given by user.)
----
-
 ## Algorithm
-##### Collabortive Filtering (Recommender Algorithm)
-* Collaborative filtering filters information by using the interactions and data collected by the system from other users. It's based on the idea that people who agreed in their evaluation of certain items are likely to agree again in the future.
-* When we want to find a new movie to watch we'll often ask our friends for recommendations. Naturally, we have greater trust in the recommendations from friends who share tastes similar to our own.
-* Collaborative-filtering systems focus on the relationship between users and items. The similarity of items is determined by the similarity of the ratings of those items by the users who have rated both items.
-* There are two types of collaborative filtering
-    * **User-based**, which measures the similarity between target users and other users.
-    * **Item-based**, which measures the similarity between the items that target users rate or interact with and other items.
-    > I have used **user based** collaborative filtering in this project.
-     
-     
-  ---
+##### Content Based (Recommender Algorithm)
+* Content Based filters rely on the similarity of the items being recommended. The intuition behind this being that if a user liked a particular movie or show, he/she might like a movie or a show similar to it.
+* Content based filters information by using the cosine similarity method. First tags are generated for each movie basis keywords, overview, genres, cast and crew etc. Then the most frequent tags are selected and their frequencies are calculated for each movie, resulting in a NxM matrix (N movies, M tags). This can be reimagined as N vectors in an M-Dimensional space. The dot product between 2 vectors gives a measure of the 2 corresponding movies' similarity (Cosine similarity).  interactions and data collected by the system from other users. It's based on the idea that people who agreed in their evaluation of certain items are likely to agree again in the future.
 
-## Contributing 💡
-
-
-#### Step 1
-
-- **Option 1**
-    - 🍴 Fork this repo!
-
-- **Option 2**
-    - 👯 Clone this repo to your local machine.
-
-
-#### Step 2
-
-- **Build your code** 🔨🔨🔨
-
-#### Step 3
-
-- 🔃 Create a new pull request.
 
