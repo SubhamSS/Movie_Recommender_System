@@ -1,5 +1,5 @@
 # Content Based Movie Recommender System
-> https://movie-reco-sys.herokuapp.com/
+> https://movierecosss.streamlit.app/
 
 ### Website Preview
 #### Home Page
